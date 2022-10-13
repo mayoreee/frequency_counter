@@ -13,7 +13,7 @@ fn frequency(input: &[& str], workers: usize) -> HashMap<char, usize> {
         let start: usize = postion;
         let mut end: usize = postion.add(worker_input_size - 1);
 
-        if end >= joined_input.len() - 1 {
+        if end > joined_input.len() - 1 {
             end = joined_input.len() - 1;
         }
 
